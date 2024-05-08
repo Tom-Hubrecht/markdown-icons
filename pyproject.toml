@@ -28,7 +28,7 @@ Homepage = "https://github.com/Tom-Hubrecht/markdown-icons"
 Repository = "https://github.com/Tom-Hubrecht/markdown-icons"
 
 [project.entrypoints."markdown.extensions"]
-inconfonts = "iconfonts:IconFontsExtension"
+iconfonts = "iconfonts:IconFontsExtension"
 
 [tools.setuptools.dynamic]
 version = {attr = "iconfonts.__VERSION__"}
