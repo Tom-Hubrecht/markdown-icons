@@ -150,7 +150,10 @@ class IconFontsPattern(InlineProcessor):
         if match_dict["mod"] is not None:
             # Make a string with each modifier like: "fa-2x fa-spin"
             classes["mod"] = " ".join(
-                f"{self._prefix}{c}" for c in match_dict["mod"].split(",") if c
+                map(
+                    lambda c: self._prefix + c,
+                    filter(None, match_dict["mod"].split(",")),
+                )
             )
 
         # User mods are modifier classes that shouldn't be prefixed with
@@ -159,7 +162,7 @@ class IconFontsPattern(InlineProcessor):
         if match_dict["user_mod"] is not None:
             # Make a string with each modifier like "red bold"
             classes["user_mod"] = " ".join(
-                c for c in match_dict["user_mod"].split(",") if c
+                filter(None, match_dict["user_mod"].split(","))
             )
 
         el.set("class", " ".join(classes.values()))
