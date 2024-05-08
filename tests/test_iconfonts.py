@@ -120,15 +120,3 @@ class TestMDI(unittest.TestCase):
         converted_text = md.convert(text)
 
         self.assertEqual(converted_text, expected)
-
-
-"""
-# Save to file
-BASE_DIR = os.path.realpath(os.path.dirname(__file__))
-with open(os.path.join(BASE_DIR, 'output.txt'), "w") as text_file:
-	text_file.write(str(converted_text))
-"""
-
-
-if __name__ == "__main__":
-    unittest.main()
