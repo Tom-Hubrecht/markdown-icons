@@ -27,7 +27,7 @@ classifiers = [
 Homepage = "https://github.com/Tom-Hubrecht/markdown-icons"
 Repository = "https://github.com/Tom-Hubrecht/markdown-icons"
 
-[project.entrypoints."markdown.extensions"]
+[project.entry-points."markdown.extensions"]
 iconfonts = "iconfonts:IconFontsExtension"
 
 [tools.setuptools.dynamic]

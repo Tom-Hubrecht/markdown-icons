@@ -108,7 +108,3 @@ class IconFontsExtension(Extension):
                 f"iconfonts_{prefix.rstrip('-')}",
                 175,
             )
-
-
-def makeExtension(**kwargs):
-    return IconFontsExtension(**kwargs)
