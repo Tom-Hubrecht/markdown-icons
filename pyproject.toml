@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "markdown-icons"
+authors = [
+  {name = "Tom Hubrecht", email = "pypi@mail.hubrecht.ovh"},
+  {name = "Eric Eastwood", email = "contact@ericeastwood.com"},
+]
+description = "Markdown extension to display icons"
+readme = "README.md"
+keywords = ["markdown", "icons", "fontawesome", "bootstrap"]
+license = {file = "LICENSE"}
+dependencies = [
+  "markdown",
+]
+dynamic = ["version"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Web Environment",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://github.com/Tom-Hubrecht/markdown-icons"
+Repository = "https://github.com/Tom-Hubrecht/markdown-icons"
+
+[project.entrypoints."markdown.extensions"]
+inconfonts = "iconfonts:IconFontsExtension"
+
+[tools.setuptools.dynamic]
+version = {attr = "iconfonts.__VERSION__"}
