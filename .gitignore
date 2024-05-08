@@ -3,3 +3,4 @@ MANIFEST
 tests/__pycache__/
 __pycache__
 .direnv
+.pypi-token
