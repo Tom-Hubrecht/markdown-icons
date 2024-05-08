@@ -4,6 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "markdown-icons"
+version = "3.0"
 authors = [
   {name = "Tom Hubrecht", email = "pypi@mail.hubrecht.ovh"},
   {name = "Eric Eastwood", email = "contact@ericeastwood.com"},
@@ -15,7 +16,6 @@ license = {file = "LICENSE"}
 dependencies = [
   "markdown",
 ]
-dynamic = ["version"]
 classifiers = [
   "Development Status :: 5 - Production/Stable",
   "Environment :: Web Environment",
@@ -29,6 +29,3 @@ Repository = "https://github.com/Tom-Hubrecht/markdown-icons"
 
 [project.entry-points."markdown.extensions"]
 iconfonts = "iconfonts:IconFontsExtension"
-
-[tools.setuptools.dynamic]
-version = {attr = "iconfonts.__VERSION__"}
