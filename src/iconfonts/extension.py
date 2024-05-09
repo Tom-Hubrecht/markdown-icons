@@ -1,5 +1,3 @@
-__VERSION__ = "3.0"
-
 import re
 import xml.etree.ElementTree as etree
 from collections import defaultdict

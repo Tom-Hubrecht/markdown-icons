@@ -26,6 +26,7 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/Tom-Hubrecht/markdown-icons"
 Repository = "https://github.com/Tom-Hubrecht/markdown-icons"
+Issues = "https://github.com/Tom-Hubrecht/markdown-icons/issues"
 
 [project.entry-points."markdown.extensions"]
 iconfonts = "iconfonts:IconFontsExtension"
